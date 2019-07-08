@@ -8,6 +8,7 @@
 </head>
 
     <body>
+
         <h1>Registration</h1>
         <form method="post">
             Name: <input type="text" name="name"> <br> <!-- Nie ma action=, form wyslany bedzie na /students/register -->
