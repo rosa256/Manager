@@ -1,0 +1,22 @@
+    #http://blog.mloza.pl/spring-boot-test-testowanie-aplikacji-w-spring-boocie/
+    JUnit – Podstawowa biblioteka do uruchamiania testów,
+    Mockito – biblioteka do tworzenia Mockowych obiektów,
+    AssertJ – biblioteka zawierająca assercje,
+    Spring Test i Spring Boot Tests – zestaw narzędzi do testowania Springa i Spring Boota,
+
+    Testowanie Controllera
+--------------------------
+    !. Metoda - Wstrzykniecie controllera i wywolanie metdoy
+	*Mamy pewnosc ze Spring znalazl kontroller i czy moetoda wykonala sie prawidlowo.
+    !!. Wykorzystanie mockMvc i wykoanie zapytania.
+	*Dodatkowo sprawdzimy czy prawidlowo mapujemy adres oraz czy serializacja danych 
+	dziala tak jak bysmy oczekiwali.
+--------------------------
+    *@RunWith - mówi silnikowi testów (którym w przykładzie jest JUnit), aby uruchomił ten test z użyciem SpringRunnera.
+    Dzięki temu framework wie, że to będzie test z wykorzystaniem Springa i powinien wstrzyknąć zależności.
+    Dodatkowo szuka adnotacji takich jak @WebMvcTest
+    
+    *@WebMvcTest- mówi, że chcemy testować komponenty MVC więc skonfiguruje dodatkowe elementy 
+     które będą nam potrzebne, takie jak mockMvc.W tym przypadku zostanie skonfigurowany cały
+     kontekst springowy, ale nie będzie tworzony serwer. 
+     Dzięki temu cały test uruchomi się szybciej i nie będzie potrzebował dodatkowych portów.

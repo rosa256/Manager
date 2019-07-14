@@ -1,0 +1,5 @@
+Widoki
+Zajmuja sie tlumaczeniem logicznych nazw widokow na ich fizczna implementacje
+
+InternalResourceViewResolver z JSP jest stosowany.
+
