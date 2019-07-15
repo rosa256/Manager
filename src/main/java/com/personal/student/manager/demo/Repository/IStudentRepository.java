@@ -2,9 +2,11 @@ package com.personal.student.manager.demo.Repository;
 
 import com.personal.student.manager.demo.Models.Student;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface IStudentRepository extends CrudRepository<Student, Long> {
-    public List<Student> findTopByIdBefore(int count);
+    List<Student> findTopByIdBefore(int count);
 }

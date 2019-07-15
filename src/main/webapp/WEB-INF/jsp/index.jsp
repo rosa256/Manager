@@ -1,5 +1,5 @@
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
+<%@include file="init/init.jsp"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,21 +7,15 @@
     <title>Welcome</title>
     <link href="/css/menu.css" rel="stylesheet"/>
 </head>
-    <body>
-        <h1>Welcome HOME</h1>
-
-        <%@include file="include/navigation-bar.jsp" %>
-
-        <div style="float: left"></div>
-
-        <%@include file="include/menu-left-bar.jsp" %>
+<body>
+    <h1>Index Page</h1>
+        <%@include file="include/navigation-bar.jsp"%>
 
         <div class="content">
 
         </div>
 
-        <div style="clear: both"></div>
-
-    </body>
+    <div style="clear: both"></div>
+</body>
 
 </html>
